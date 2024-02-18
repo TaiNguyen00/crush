@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Micro+5&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+.container {
+  margin-top: 40px;
+  padding: 12px;
+}
+body {
+  font-family: "Roboto Mono", monospace;
+  font-optical-sizing: auto;
+  font-style: normal;
+  /* fallback for old browsers */
+
+  background: url('https://img.freepik.com/premium-vector/scattering-pink-hearts-white-background-valentine-s-day-pattern_554025-1297.jpg');
+  
+}
+
+.title {
+  padding: 20px;
+  text-align: center;
+  color: palevioletred;
+
+}
+.gif {
+  margin-left: 50px;
+  width: 300px;
+  height: 300px;
+  object-fit: contain;
+}
+#no {
+  z-index: 10px;
+  position: absolute;
+  transition: all 0.3s;
+}
+.yes-btn-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.yes-btn {
+  background: pink;  /* fallback for old browsers */
+
+
+  border: none;
+  outline: none;
+  padding: 6px 12px;
+  color: white;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.no-btn {
+  background-color: #d9a7c7 ;
+  border: none;
+  outline: none;
+  padding: 6px 12px;
+  color: rgb(76, 74, 74);
+  border-radius: 5px;
+  font-size: 1.8rem;
+}
+#heart {
+  position: absolute;
+  top: 460px;
+  right: 180px;
+}

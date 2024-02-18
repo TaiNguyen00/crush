@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <main>
+      <div class="container">
+        <img class="gif" src="https://i.pinimg.com/originals/c5/c6/73/c5c673dc3cb4ebd03675713b984a25cd.gif" alt="">
+        <h2 class="title">Làm người yêu anh nhé?</h2>
+          <div id="yes" class="yes-btn-container">
+            <button type="button" id="yes-btn" class="yes-btn">Có</button>
+          </div>
+          <img id="heart" height="40" width="40" style="display: none;"  src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Love_Heart_symbol.svg/2250px-Love_Heart_symbol.svg.png" alt="">
+          <div id="no" class="no-btn-container">
+            <button type="button" id="no-btn" class="no-btn">Hongg</button>
+          </div>
+      </div>
+    </main>
+    
+    <script>
+      // demo
+      const yes = document.getElementById('yes')
+      const no = document.getElementById('no')
+      const yesBtn = document.getElementById('yes-btn')
+      const noBtn = document.getElementById('no-btn')
+      const hear = document.getElementById('heart')
+      const scaleStep = 0.2;
+      no.addEventListener('touchstart', (event) => {
+        event.preventDefault()
+        
+        const x = Math.floor(Math.random() * (window.innerHeight - 700))
+        const y = Math.floor(Math.random() * (window.innerHeight - 250))
+
+        no.style.left = `${x}px`
+        no.style.top = `${y}px`
+
+        const currentScale = parseFloat(yesBtn.style.transform.match(/\d+(\.\d+)?/));
+        const newScale = currentScale ? currentScale + scaleStep : 1.2
+
+        yesBtn.style.transform = `scale(${newScale})`
+
+        const currentNoScale = parseFloat(noBtn.style.transform.match(/\d+(\.\d+)?/));
+        const newNoScale = currentNoScale ? currentNoScale - scaleStep : 0.8;
+        noBtn.style.transform = `scale(${newNoScale})`;
+      })
+
+      yes.addEventListener('touchstart', (e) => {
+        e.preventDefault()
+        hear.style.display = 'block' 
+        yes.innerText = `Yêu em rất nhiều công chúa của anh`
+        no.style.display = 'none'
+      })
+    </script>
+</body>
+</html>
