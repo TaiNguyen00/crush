@@ -12,7 +12,7 @@
         <img class="gif" src="https://i.pinimg.com/originals/c5/c6/73/c5c673dc3cb4ebd03675713b984a25cd.gif" alt="">
         <h2 class="title">Làm người yêu anh nhé?</h2>
           <div id="yes" class="yes-btn-container">
-            <button type="button" id="yes-btn" class="yes-btn">Có</button>
+            <button type="button" id="yes-btn" class="yes-btn">Đồng ý</button>
           </div>
           <img id="heart" height="40" width="40" style="display: none;"  src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Love_Heart_symbol.svg/2250px-Love_Heart_symbol.svg.png" alt="">
           <div id="no" class="no-btn-container">
@@ -42,7 +42,7 @@
         const newScale = currentScale ? currentScale + scaleStep : 1.2
 
         yesBtn.style.transform = `scale(${newScale})`
-
+        
         const currentNoScale = parseFloat(noBtn.style.transform.match(/\d+(\.\d+)?/));
         const newNoScale = currentNoScale ? currentNoScale - scaleStep : 0.8;
         noBtn.style.transform = `scale(${newNoScale})`;
@@ -52,6 +52,7 @@
         e.preventDefault()
         hear.style.display = 'block' 
         yes.innerText = `Yêu em rất nhiều công chúa của anh`
+        yes.classList.add('fontFinal')
         no.style.display = 'none'
       })
     </script>

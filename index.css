@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Micro+5&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&family=Micro+5&display=swap');
 * {
   margin: 0;
   padding: 0;
@@ -11,9 +11,7 @@
   padding: 12px;
 }
 body {
-  font-family: "Roboto Mono", monospace;
-  font-optical-sizing: auto;
-  font-style: normal;
+
   /* fallback for old browsers */
 
   background: url('https://img.freepik.com/premium-vector/scattering-pink-hearts-white-background-valentine-s-day-pattern_554025-1297.jpg');
@@ -21,6 +19,9 @@ body {
 }
 
 .title {
+  font-family: "Kode Mono", monospace;
+  font-optical-sizing: auto;
+  font-style: normal;
   padding: 20px;
   text-align: center;
   color: palevioletred;
@@ -51,7 +52,12 @@ body {
   padding: 6px 12px;
   color: white;
   border-radius: 5px;
-  font-size: 1rem;
+  font-size: 1.2rem;
+
+  font-family: "Kode Mono", monospace;
+  font-optical-sizing: auto;
+  font-style: normal;
+
 }
 
 .no-btn {
@@ -62,9 +68,19 @@ body {
   color: rgb(76, 74, 74);
   border-radius: 5px;
   font-size: 1.8rem;
+  font-family: "Kode Mono", monospace;
+  font-optical-sizing: auto;
+  font-style: normal;
+
 }
 #heart {
   position: absolute;
   top: 460px;
   right: 180px;
+}
+.fontFinal {
+  font-family: "Kode Mono", monospace;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight:900;
 }
